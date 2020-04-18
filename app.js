@@ -1,12 +1,11 @@
-const Express = require("express");
-const Mongoose = require("mongoose");
-const BodyParser = require("body-parser");
-
-import PersonModel from "./models/PersonModel";
+import Express from "express";
+import Mongoose from "mongoose";
+import BodyParser from "body-parser";
+import PersonModel from "./models/PersonModel.js";
 
 var app = Express();
 
-Mongoose.connect("mongodb://localhost/ariemay");
+Mongoose.connect("mongodb://localhost/ariemay01");
 
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));

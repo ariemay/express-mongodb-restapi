@@ -1,8 +1,10 @@
-const Mongoose = require("mongoose");
+// const Mongoose = require("mongoose");
+import Mongoose from "mongoose";
 
-const PersonModel = Mongoose.model("person", {
+const PersonModel = Mongoose.model("customer", {
     firstname: String,
     lastname: String
 });
 
+// module.exports. PersonModel;
 export default PersonModel;
